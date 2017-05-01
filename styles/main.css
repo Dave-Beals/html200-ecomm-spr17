@@ -14,6 +14,12 @@ img {
   max-height: 20rem;
 }
 
+#mailing-list {
+  float: left;
+  width: 20%;
+  margin: 1em 0 0 1em;
+}
+
 /***************** NAV *****************/
 
 nav a:hover {
@@ -32,11 +38,14 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: #3D7FCF;
+  width: 100%;
+  margin: 0;
 }
 
 .nav-links li {
   margin: 0 auto 0;
   color: white;
+  min-width: 8rem;
 }
 
 li i {
@@ -71,6 +80,11 @@ section {
   padding: 0 .75rem;
 }
 
+#products {
+  float: right;
+  width: 80%;
+}
+
 h2 {
   padding-top: 1.5rem;
   font-size: 2rem;
@@ -82,4 +96,16 @@ h3 {
   font-size: 1.2rem;
   text-align: center;
   color: #2d2d2d;
+}
+
+.item-container {
+  border: 1px solid gray;
+  width: 33.3333333%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.item-container img {
+  width: 75%;
 }
