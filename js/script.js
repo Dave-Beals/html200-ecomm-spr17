@@ -1,3 +1,10 @@
+console.log('I am the handler of forms');
+
+function capture () {
+  event.preventDefault();
+  console.log("Thanks for signing up for our e-mail " + document.customerEmail.email.value + "!!!!");
+}
+
 var products = [
   {
     "name": "Reversible Plaid",
@@ -48,4 +55,3 @@ var products = [
     "imageTitle": "twill.jpg"
   }
 ]
-
