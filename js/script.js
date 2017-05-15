@@ -5,9 +5,6 @@ function capture () {
   console.log("Thanks for signing up for our e-mail " + document.customerEmail.email.value + "!!!!");
 }
 
-function changeColor() {
-  document.getElementById("reversible-plaid").style.background = "red";
-}
 
 
 var products = [
