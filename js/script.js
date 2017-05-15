@@ -5,16 +5,8 @@ function capture () {
   console.log("Thanks for signing up for our e-mail " + document.customerEmail.email.value + "!!!!");
 }
 
-function changeColor(button, color) {
-  var button = document.getElementByType(button);
-  if (count == 0) {
-    property.style.backgroundColor = "#1E90FF"
-    count = 1;
-  }
-  else {
-    property.style.backgroundColor = "buttonface"
-    count = 0;
-  }
+function changeColor() {
+  document.getElementById("reversible-plaid").style.background = "red";
 }
 
 
