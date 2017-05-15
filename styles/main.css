@@ -87,9 +87,55 @@ h1 .company {
   display: flex;
 }
 
-@media {
-
+#scarfcat-head {
+  margin: 0 1em 1em 2em;
 }
+
+@media (min-width: 1270px) {
+  h1 {
+    padding-left: 2rem;
+  }
+  h1 .logo-w {
+    font-size: 14rem;
+  }
+  h1 .company {
+    font-size: 7rem;
+  }
+}
+
+@media (min-width: 970px) and (max-width: 1269px) {
+  h1 .logo-w {
+    font-size: 12rem;
+  }
+  h1 .company {
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 969px) {
+  h1 .logo-w {
+    font-size: 9rem;
+  }
+  h1 .company {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 1269px) {
+  #scarfcat-head {
+    display: none;
+  }
+}
+
+@media (min-width: 1270px) {
+  #logo {
+    display: none;
+  }
+  h1 {
+    padding-left: 2rem;
+  }
+}
+
 
 /**************** ASIDE ****************/
 
@@ -106,10 +152,6 @@ input[type="submit"] {
   border-radius: 5px;
   font-size: .75rem;
   color: white;
-}
-
-@media query {
-
 }
 
 /*********** PRODUCTS SECTION ***********/
