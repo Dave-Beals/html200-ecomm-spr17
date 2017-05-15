@@ -67,6 +67,7 @@ h1 .company {
   display: flex;
 }
 
+
 /**************** ASIDE ****************/
 
 #mailing-list {
@@ -93,6 +94,10 @@ section {
 #products {
   float: right;
   width: 80%;
+}
+
+input:checked + label {
+  color: red;
 }
 
 h2 {
