@@ -6,12 +6,13 @@ function capture () {
 }
 
 function toggleCart() {
-  event.preventDefault();
   var checkbox = event.target;
   if(checkbox.checked) {
+    checkbox.labels[0].innerText = "Remove from cart";
     cart.push(checkbox.id);
     console.log(cart.length + " items are in the cart");
   } else {
+    checkbox.labels[0].innerText = "Add to cart";
     var index = cart.findIndex(function(item) {
       item === checkbox.id});
     cart.splice(index, 1);
