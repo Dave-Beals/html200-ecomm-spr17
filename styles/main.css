@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 100%;
   font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
@@ -10,8 +14,13 @@ p {
 }
 
 /* TODO: size images manually so this is not necessary */
-img {
+/*img {
   max-height: 20rem;
+}*/
+
+.main-content {
+  display: flex;
+  flex-direction: column;
 }
 
 /***************** NAV *****************/
@@ -92,8 +101,7 @@ section {
 }
 
 #products {
-  float: right;
-  width: 80%;
+  width: 100%;
 }
 
 input:checked + label {
@@ -114,7 +122,6 @@ h3 {
 }
 
 .item-container {
-  width: 33.3333333%;
   display: flex;
   flex-direction: column;
   justify-items: center;
