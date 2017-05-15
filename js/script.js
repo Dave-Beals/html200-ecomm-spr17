@@ -5,7 +5,21 @@ function capture () {
   console.log("Thanks for signing up for our e-mail " + document.customerEmail.email.value + "!!!!");
 }
 
+function toggleCart() {
+  event.preventDefault();
+  var checkbox = event.target;
+  if(checkbox.checked) {
+    cart.push(checkbox.id);
+    console.log(cart.length + " items are in the cart");
+  } else {
+    var index = cart.findIndex(function(item) {
+      item === checkbox.id});
+    cart.splice(index, 1);
+    console.log(cart.length + " items are in the cart");
+  }
+}
 
+var cart = [];
 
 var products = [
   {
