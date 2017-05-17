@@ -43,6 +43,7 @@ nav a {
   background-color: #3D7FCF;
   width: 100%;
   margin: 0;
+  padding: 0.4rem 0 0.4rem;
 }
 
 .nav-links li {
@@ -53,6 +54,11 @@ nav a {
 
 li i {
   color: white;
+}
+
+#cart-count {
+  background-color: yellow;
+  display: inline-block;
 }
 
 @media (max-width: 500px) {
